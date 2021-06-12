@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   height: 100vh;
   color: #333;
@@ -116,6 +116,7 @@ main {
   font-weight: bolder;
   transition: all 0.2s;
 
+  background-color: white;
   background-color: rgba(240, 235, 235, 0.808);
   backdrop-filter: blur(10px);
 
@@ -155,18 +156,27 @@ main {
   top: 16.5rem;
   transform: translateX(-50%);
   height: 10rem;
-  box-shadow: 0 2rem 5rem rgba(116, 106, 106, 0.2);
+  box-shadow: 0 2rem 5rem rgba(211, 206, 206, 0.726);
+  filter: grayscale(10);
 }
 
 .player--winner {
-  background-color: #2f2f2f;
+  background-color: #c41717;
 }
 
 .player--winner .name {
   font-weight: 700;
-  color: #0f0f0f;
+  color: #fff;
 }
-
+.player--winner .score {
+  color: #fff;
+}
+.player--winner .current {
+  box-shadow: 0.5rem 0.5rem 0.5rem rgb(192, 192, 192, 0.5);
+  font-weight: bold;
+  background-color: #fff;
+  color: #c41717;
+}
 .hidden {
   display: none;
 }
