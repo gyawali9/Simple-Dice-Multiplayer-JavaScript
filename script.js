@@ -93,3 +93,6 @@ btnHold.addEventListener("click", function () {
     }
   }
 });
+
+// Reset Button Functionality
+btnNew.addEventListener("click", init);
